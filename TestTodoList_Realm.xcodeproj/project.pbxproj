@@ -13,6 +13,8 @@
 		8B237DA9232B9C06000D6317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B237DA7232B9C06000D6317 /* Main.storyboard */; };
 		8B237DAB232B9C07000D6317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B237DAA232B9C07000D6317 /* Assets.xcassets */; };
 		8B237DAE232B9C07000D6317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B237DAC232B9C07000D6317 /* LaunchScreen.storyboard */; };
+		8B237DBE232BA653000D6317 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B237DBD232BA653000D6317 /* Todo.swift */; };
+		8B237DC0232BA65C000D6317 /* SubTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B237DBF232BA65C000D6317 /* SubTodo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		8B237DAA232B9C07000D6317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B237DAD232B9C07000D6317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B237DAF232B9C07000D6317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B237DBD232BA653000D6317 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		8B237DBF232BA65C000D6317 /* SubTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTodo.swift; sourceTree = "<group>"; };
 		CBDD179D463BC639A455BF5A /* Pods-TestTodoList_Realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTodoList_Realm.release.xcconfig"; path = "Target Support Files/Pods-TestTodoList_Realm/Pods-TestTodoList_Realm.release.xcconfig"; sourceTree = "<group>"; };
 		E446D554534AFB4C8F1F68A0 /* Pods-TestTodoList_Realm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTodoList_Realm.debug.xcconfig"; path = "Target Support Files/Pods-TestTodoList_Realm/Pods-TestTodoList_Realm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				8B237DA3232B9C06000D6317 /* AppDelegate.swift */,
+				8B237DC1232BA709000D6317 /* Models */,
 				8B237DB5232B9C0D000D6317 /* Controllers */,
 				8B237DB6232B9C1A000D6317 /* Views */,
 				8B237DB7232B9C21000D6317 /* Supporting Files */,
@@ -114,6 +119,15 @@
 				8B237DAF232B9C07000D6317 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B237DC1232BA709000D6317 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B237DBD232BA653000D6317 /* Todo.swift */,
+				8B237DBF232BA65C000D6317 /* SubTodo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B237DC0232BA65C000D6317 /* SubTodo.swift in Sources */,
 				8B237DA6232B9C06000D6317 /* ViewController.swift in Sources */,
+				8B237DBE232BA653000D6317 /* Todo.swift in Sources */,
 				8B237DA4232B9C06000D6317 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
