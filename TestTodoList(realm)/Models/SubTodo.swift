@@ -8,9 +8,9 @@
 
 import RealmSwift
 
-class TaskList: Object {
+class TodoList: Object {
     
     @objc dynamic var subject = ""
     @objc dynamic var createdAt = NSDate()
-    let tasks = List<Todo>()
+    let todos = List<Todo>()
 }

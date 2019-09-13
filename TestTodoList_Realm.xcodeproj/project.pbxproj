@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29E33EDA232C4BA60049A7F1 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E33ED9232C4BA60049A7F1 /* Helpers.swift */; };
 		6D89675FF492CA55ECEAF6C5 /* Pods_TestTodoList_Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0807F5DCF34B866C8A1E59AD /* Pods_TestTodoList_Realm.framework */; };
 		8B237DA4232B9C06000D6317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B237DA3232B9C06000D6317 /* AppDelegate.swift */; };
-		8B237DA6232B9C06000D6317 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B237DA5232B9C06000D6317 /* ViewController.swift */; };
+		8B237DA6232B9C06000D6317 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B237DA5232B9C06000D6317 /* TodoViewController.swift */; };
 		8B237DA9232B9C06000D6317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B237DA7232B9C06000D6317 /* Main.storyboard */; };
 		8B237DAB232B9C07000D6317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B237DAA232B9C07000D6317 /* Assets.xcassets */; };
 		8B237DAE232B9C07000D6317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B237DAC232B9C07000D6317 /* LaunchScreen.storyboard */; };
@@ -19,11 +20,12 @@
 
 /* Begin PBXFileReference section */
 		0807F5DCF34B866C8A1E59AD /* Pods_TestTodoList_Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTodoList_Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29E33ED9232C4BA60049A7F1 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		2B68DF10B190D81B1AC7C25C /* Pods-TestTodoList(realm).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTodoList(realm).debug.xcconfig"; path = "Target Support Files/Pods-TestTodoList(realm)/Pods-TestTodoList(realm).debug.xcconfig"; sourceTree = "<group>"; };
 		83DB36E43D4AF5F71549E06C /* Pods-TestTodoList(realm).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTodoList(realm).release.xcconfig"; path = "Target Support Files/Pods-TestTodoList(realm)/Pods-TestTodoList(realm).release.xcconfig"; sourceTree = "<group>"; };
 		8B237DA0232B9C06000D6317 /* TestTodoList_Realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTodoList_Realm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B237DA3232B9C06000D6317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B237DA5232B9C06000D6317 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B237DA5232B9C06000D6317 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		8B237DA8232B9C06000D6317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B237DAA232B9C07000D6317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B237DAD232B9C07000D6317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 				CBDD179D463BC639A455BF5A /* Pods-TestTodoList_Realm.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		29E33EDB232C564B0049A7F1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				29E33ED9232C4BA60049A7F1 /* Helpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		6AB22E3E019AD41689769631 /* Frameworks */ = {
@@ -90,6 +100,7 @@
 				8B237DC1232BA709000D6317 /* Models */,
 				8B237DB5232B9C0D000D6317 /* Controllers */,
 				8B237DB6232B9C1A000D6317 /* Views */,
+				29E33EDB232C564B0049A7F1 /* Helpers */,
 				8B237DB7232B9C21000D6317 /* Supporting Files */,
 			);
 			path = "TestTodoList(realm)";
@@ -98,7 +109,7 @@
 		8B237DB5232B9C0D000D6317 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8B237DA5232B9C06000D6317 /* ViewController.swift */,
+				8B237DA5232B9C06000D6317 /* TodoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,7 +257,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B237DC0232BA65C000D6317 /* SubTodo.swift in Sources */,
-				8B237DA6232B9C06000D6317 /* ViewController.swift in Sources */,
+				29E33EDA232C4BA60049A7F1 /* Helpers.swift in Sources */,
+				8B237DA6232B9C06000D6317 /* TodoViewController.swift in Sources */,
 				8B237DBE232BA653000D6317 /* Todo.swift in Sources */,
 				8B237DA4232B9C06000D6317 /* AppDelegate.swift in Sources */,
 			);
