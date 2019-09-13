@@ -23,6 +23,7 @@ class TodoViewController: UIViewController {
         super.viewDidLoad()
         
         // I'm Here...
+        tableView.tableFooterView = UIView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
