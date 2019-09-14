@@ -3,7 +3,7 @@
 ###### master uses realm.
 ###### please follow the below command.
 ```
-git clone https://github.com/AmirDaliri/TodoList.git
+$ git clone https://github.com/AmirDaliri/TodoList.git
 ```
 ```
 $ pod install
